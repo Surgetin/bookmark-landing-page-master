@@ -61,36 +61,65 @@
         <div class="tabs_container">
           <div class="tabs__list-items">
             <ul class="tab__list-item">
-              <li>Simple Bookmarking</li>
+              <li data-tab-name="bookmarking">Simple Bookmarking</li>
             </ul>
-            <ul class="tab__list-item">
-              <li>Speedy Searching</li>
+            <ul class="tab__list-item active">
+              <li data-tab-name="searching">Speedy Searching</li>
             </ul>
-            <ul class="tab__list-item">
-              <li>Easy Sharing</li>
+            <ul class="tab__list-item active">
+              <li data-tab-name="sharing">Easy Sharing</li>
             </ul>
           </div>
-        
-          Bookmark in one click
-        
-          Organize your bookmarks however you like. Our simple drag-and-drop interface 
-          gives you complete control over how you manage your favourite sites.
-        
-          More Info
-        
-          Intelligent search
-        
-          Our powerful search feature will help you find saved sites in no time at all. 
-          No need to trawl through all of your bookmarks.
-        
-          More Info
-        
-          Share your bookmarks
-        
-          Easily share your bookmarks and collections with others. Create a shareable 
-          link that you can send at the click of a button.
-        
-          More Info
+          <div class="tab__container">
+            <!-- Bookmarking -->
+            <div class="tab__section active" id="bookmarking">
+              <div class="bookmark_image">
+                <img src="./images/illustration-features-tab-1.svg" alt="features_img">
+              </div>
+              <div class="tab__content">
+                <h2 class="tab__heading">
+                  Bookmark in one click
+                </h2>
+                <p class="tab__title">
+                  Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                  gives you complete control over how you manage your favourite sites.
+                </p>
+                <button class="hero__btn-chrome btn" aria-label="button">More Info</button>
+              </div>
+            </div>
+            <!-- Searching -->
+            <div class="tab__section" id="searching">
+              <div class="bookmark_image">
+                <img src="./images/illustration-features-tab-2.svg" alt="features_img">
+              </div>
+              <div class="tab__content">
+                <h2 class="tab__heading">
+                  Intelligent search
+                </h2>
+                <p class="tab__title">
+                  Our powerful search feature will help you find saved sites in no time at all. 
+                  No need to trawl through all of your bookmarks.
+                </p>
+                <button class="hero__btn-chrome btn" aria-label="button">More Info</button>
+              </div>
+            <!-- Sharing -->
+            </div>
+            <div class="tab__section" id="sharing">
+              <div class="bookmark_image">
+                <img src="./images/illustration-features-tab-3.svg" alt="features_img">
+              </div>
+              <div class="tab__content">
+                <h2 class="tab__heading">
+                  Share your bookmarks
+                </h2>
+                <p class="tab__title">
+                  Easily share your bookmarks and collections with others. Create a shareable 
+                  link that you can send at the click of a button.
+                </p>       
+                <button class="hero__btn-chrome btn" aria-label="button">More Info</button>
+              </div>
+            </div>   
+          </div>
         </div>
 
       </section>
