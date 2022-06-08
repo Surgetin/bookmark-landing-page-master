@@ -14,6 +14,7 @@
 <body>
   <main class="main">
     <div class="container">
+
       <!-- Navigation section -->
       <div class="nav__wrapper">
         <nav class="nav">
@@ -28,6 +29,7 @@
           </ul>
         </nav>
       </div>
+
       <!-- Hero section -->
       <section class="hero__container">
         <div class="hero__content">
@@ -47,6 +49,7 @@
           <img src="./images/illustration-hero.svg" alt="">
         </div>
       </section>
+
       <!-- Features section -->
       <section class="features__container">
         <div class="features__content">
@@ -61,18 +64,19 @@
         <div class="tabs_container">
           <div class="tabs__list-items">
             <ul class="tab__list-item">
-              <li data-tab-name="bookmarking">Simple Bookmarking</li>
+              <li data-tab-target="#bookmarking" class="tab active">Simple Bookmarking</li>
             </ul>
-            <ul class="tab__list-item active">
-              <li data-tab-name="searching">Speedy Searching</li>
+            <ul class="tab__list-item">
+              <li data-tab-target="#searching" class="tab">Speedy Searching</li>
             </ul>
-            <ul class="tab__list-item active">
-              <li data-tab-name="sharing">Easy Sharing</li>
+            <ul class="tab__list-item">
+              <li data-tab-target="#sharing" class="tab">Easy Sharing</li>
             </ul>
           </div>
           <div class="tab__container">
+
             <!-- Bookmarking -->
-            <div class="tab__section active" id="bookmarking">
+            <div data-tab-content id="bookmarking" class="active">
               <div class="bookmark_image">
                 <img src="./images/illustration-features-tab-1.svg" alt="features_img">
               </div>
@@ -87,8 +91,9 @@
                 <button class="hero__btn-chrome btn" aria-label="button">More Info</button>
               </div>
             </div>
+            
             <!-- Searching -->
-            <div class="tab__section" id="searching">
+            <div data-tab-content id="searching">
               <div class="bookmark_image">
                 <img src="./images/illustration-features-tab-2.svg" alt="features_img">
               </div>
@@ -102,9 +107,10 @@
                 </p>
                 <button class="hero__btn-chrome btn" aria-label="button">More Info</button>
               </div>
+
             <!-- Sharing -->
             </div>
-            <div class="tab__section" id="sharing">
+            <div data-tab-content id="sharing">
               <div class="bookmark_image">
                 <img src="./images/illustration-features-tab-3.svg" alt="features_img">
               </div>
@@ -121,62 +127,116 @@
             </div>   
           </div>
         </div>
-
       </section>
-    
-    
-      Download the extension
-    
-      We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-      got a favourite you’d like us to prioritize.
-    
-      Add to Chrome
-      Minimum version 62
-      Add & Install Extension
-    
-      Add to Firefox
-      Minimum version 55
-      Add & Install Extension
-    
-      Add to Opera
-      Minimum version 46
-      Add & Install Extension
-    
-      Frequently Asked Questions
+
+      <!-- Download section -->
+      <section class="download__section">
+        <div class="download__content">
+          <h2 class="download__heading">
+            Download the extension
+          </h2>
+          <p class="download__title">
+            We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+            got a favourite you’d like us to prioritize.
+          </p>        
+        </div>
+        <div class="extensions__container">
+          <div class="extension__card-container valami">
+            <div class="card">
+              <img class="card_logo" src="./images/logo-chrome.svg" alt="logo">
+              <h3 class="card__heading">
+                Add to Chrome
+              </h3>
+              <div class="card_text">
+                Minimum version 62
+              </div>
+              <div class="dot">
+                <img src="./images/bg-dots.svg" alt="dot">
+              </div>
+              <div class="card-btn">
+                <button class="hero__btn-chrome btn card_btn" aria-label="button">Add & Install Extension</button>
+              </div>
+            </div>
+          </div>
+          <div class="extension__card-container card-firefox">
+            <div class="card">
+              <img class="card_logo" src="./images/logo-firefox.svg" alt="logo">
+              <h3 class="card__heading">
+                Add to Firefox
+              </h3> 
+              <div class="card_text">
+                Minimum version 55
+              </div>
+              <div class="dot">
+                <img src="./images/bg-dots.svg" alt="dot">
+              </div>
+              <div class="card-btn">
+                <button class="hero__btn-chrome btn card_btn" aria-label="button">Add & Install Extension</button>
+              </div>
+            </div>
+          </div>
+          <div class="extension__card-container card-opera"> 
+            <div class="card">
+              <img class="card_logo" src="./images/logo-opera.svg" alt="logo">    
+              <h3 class="card__heading">
+                Add to Opera
+              </h3>
+              <div class="card_text">
+                Minimum version 46
+              </div>
+              <div class="dot">
+                <img src="./images/bg-dots.svg" alt="dot">
+              </div>
+              <div class="card-btn">
+                <button class="hero__btn-chrome btn card_btn" aria-label="button">Add & Install Extension</button>
+              </div>
+            </div> 
+          </div>
+        </div>      
+      </section>
+      <!-- FAQ section -->
+      <div class="faq__section">
+        <div class="faq__content">
+          <h2 class="faq__heading">
+            Frequently Asked Questions
+          </h2>
+          <p class="faq__title">
+            Here are some of our FAQs. If you have any other questions you’d like 
+            answered please feel free to email us.
+          </p>        
+        </div>
       
-      Here are some of our FAQs. If you have any other questions you’d like 
-      answered please feel free to email us.
-    
-      <!-- Question 1 -->
-      What is Bookmark?
-    
-      <!-- Answer 1 -->
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-      justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-    
-      <!-- Question 2 -->
-      How can I request a new browser?
-    
-      <!-- Answer 2 -->
-      Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-      Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-      ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-      Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-    
-      <!-- Question 3 -->
-      Is there a mobile app?
-    
-      <!-- Answer 3 -->
-      Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-      urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-      sollicitudin ex et ultricies bibendum.
-    
-      <!-- Question 4 -->
-      What about other Chromium browsers?
-    
-      <!-- Answer 4 -->
-      Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-      vitae neque eget nisl gravida pellentesque non ut velit.
+        <!-- Question 1 -->
+        What is Bookmark?
+      
+        <!-- Answer 1 -->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+      
+        <!-- Question 2 -->
+        How can I request a new browser?
+      
+        <!-- Answer 2 -->
+        Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+        Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+        ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+      
+        <!-- Question 3 -->
+        Is there a mobile app?
+      
+        <!-- Answer 3 -->
+        Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+        urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+        sollicitudin ex et ultricies bibendum.
+      
+        <!-- Question 4 -->
+        What about other Chromium browsers?
+      
+        <!-- Answer 4 -->
+        Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+        vitae neque eget nisl gravida pellentesque non ut velit.
+      </div>
     
       More Info
     

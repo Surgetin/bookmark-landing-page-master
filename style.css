@@ -6,6 +6,8 @@
     --soft_blue: hsl(231, 69%, 60%);
     --grayish_blue: hsl(229, 8%, 60%);
     --dark_lue: hsl(229, 31%, 21%);
+    --box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+                  rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 * {
@@ -52,8 +54,22 @@ body {
 /* Headings */
 
 .feature__heading,
-.tab__heading {
+.tab__heading,
+.download__heading,
+.faq__heading {
     font-weight: 500;
+}
+
+/* Titles */
+.hero__title {
+    margin: 1.5rem 0;
+}
+
+.feature__title,
+.download__title,
+.faq__title {
+    width: 35rem;
+    margin: 1rem auto 3rem;
 }
 
 /* Nav section */
@@ -88,15 +104,9 @@ body {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 
-        rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    -moz-box-shadow:    
-        rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, 
-        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    -webkit-box-shadow: 
-        rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
     transition: .3s ease;
 }
 
@@ -156,10 +166,6 @@ body {
     font-weight: 500;
 }
 
-.hero__title {
-    margin: 1.5rem 0;
-}
-
 .button__container {
     display: flex;
     gap: 1rem;
@@ -189,19 +195,27 @@ body {
 .features__container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 12rem;
 }
 
 .features__content {
     text-align: center;
 }
 
-.feature__title {
-    width: 35rem;
-    margin: 1rem auto 3rem;
-}
-
 .bookmark_image {
     width: 50%;
+}
+
+.tabs_container::after {
+    content: '';
+    position: absolute;
+    top: 67rem;
+    left: 0;
+    width: 40%;
+    height: 21rem;
+    background-color: var(--soft_blue);
+    z-index: -1;
+    border-bottom-right-radius: 150px;
 }
 
 .tabs__list-items {
@@ -212,27 +226,34 @@ body {
     margin: 0 auto 5rem;
 }
 
-.tab__list-item {
+.tab {
     color: var(--grayish_blue);
     margin-bottom: 2rem;
     position: relative;
+    transition: 0.3s ease;
 }
 
-.tab__list-item.active::after {
+.tab:hover,
+.tab.active {
+    color: var(--dark_lue);
+    cursor: pointer;
+}
+
+.tab.active::after {
     content: '';
     position: absolute;
-    left: -20%;
+    left: 0;
     bottom: -32px;
-    width: calc(100% + 60%);
+    width: 100%;
     height: 3px;
     background-color: var(--soft_red);
 }
 
-.tab__section {
+[data-tab-content] {
     display: none;
 }
 
-.tab__section.active {
+.active[data-tab-content] {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -248,4 +269,72 @@ body {
     margin: 1.2rem 0 1.6rem;
 }
 
+/* Download section */
+.download__section {
+    margin-bottom: 12rem;
+}
+.download__content {
+    text-align: center;
+}
+
+.extensions__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    max-width: 245px;
+}
+
+.card-firefox {
+    transform: translateY(40px);
+}
+
+.card-opera {
+    transform: translateY(80px);
+}
+
+.card_logo {
+    max-width: 70px;
+    margin: 2.5rem auto 1.5rem;
+}
+
+.card__heading {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.card_text {
+    font-size: 0.8rem;
+    color: var(--grayish_blue);
+    margin: 0.6rem 0 1rem;
+}
+
+.card_btn {
+    margin: 1rem 0;
+}
+
+.dot img {
+    width: 100%
+}
+
+/* FAQ section  */
+.faq__content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.faq__title {
+    width: 47%;
+}
 
