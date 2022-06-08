@@ -90,9 +90,10 @@ body {
 }
 
 .nav__list-link {
-    font-size: 0.8em;
+    font-size: 0.75rem;
     color: var(--dark_lue);
     transition: .4s ease;
+    letter-spacing: 2px;
 }
 
 .nav__list-link:hover {
@@ -572,6 +573,7 @@ body {
 
 .footer-link {
     color: var(--white);
+    letter-spacing: 2px;
 }
 
 .logo {
