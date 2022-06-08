@@ -305,7 +305,7 @@ body {
 }
 
 .card_logo {
-    max-width: 70px;
+    max-width: 90px;
     margin: 2.5rem auto 1.5rem;
 }
 
@@ -329,6 +329,10 @@ body {
 }
 
 /* FAQ section  */
+.faq__section {
+    margin-bottom: 8rem;
+}
+
 .faq__content {
     text-align: center;
     margin: 0 auto;
@@ -341,6 +345,10 @@ body {
 .accordion_container {
     width: 50%;
     margin: 0 auto;
+}
+
+.accordion__list-items {
+    margin-bottom: 3rem;
 }
 
 .accordion__list-item {
@@ -476,6 +484,55 @@ body {
         transform-origin: top center;
         transform: rotateX(0deg);
     }
+}
+
+.faq_btn {
+    display: flex;
+    margin: 0 auto;
+}
+
+/* Contact section */
+.contact__section {
+    background-color: var(--soft_blue);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.contact__title {
+    color: var(--white);
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 3rem auto 2rem;
+}
+
+.contact__heading {
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    width: 30%;
+    text-align: center;
+}
+
+.contact__form {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+/* Footer */
+
+.footer {
+    max-width: 1440px;
+    background-color: var(--dark_lue);
+    margin: 0 auto;
 }
 
 
