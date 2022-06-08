@@ -110,7 +110,8 @@ body {
 .hero__container {
     display: flex;
     flex-direction: row;
-    align-items: center
+    align-items: center;
+    margin-bottom: 6rem;
 }
 
 .hero__content {
@@ -133,7 +134,7 @@ body {
     top: 18rem;
     right: 0;
     width: 40%;
-    height: 30%;
+    height: 25%;
     background-color: var(--soft_blue);
     z-index: -1;
     border-bottom-left-radius: 150px;
@@ -172,3 +173,27 @@ body {
     border: 2px solid var(--dark_lue);
 }
 
+/* Features section */
+
+.features__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.features__content {
+    text-align: center;
+}
+
+.feature__heading {
+    font-weight: 500;
+}
+
+.feature__title {
+    width: 35rem;
+    margin: 1rem auto 3rem;
+}
+
+.tabs__list-items {
+    display: flex;
+    justify-content: space-around;
+}
