@@ -527,12 +527,72 @@ body {
     margin-bottom: 4rem;
 }
 
+.email {
+    border-radius: 5px;
+    outline: none;
+    padding: 0 2rem 0 .6rem;
+    color: var(--grayish_blue);
+    font-weight: 500;
+}
+
+.email:hover {
+    outline: 2px solid var(--soft_red);
+}
+
+.email-btn {
+    text-transform: initial;
+    padding: 0.6rem 1.2rem;
+}
+
+.email-btn:hover {
+    background-color: var(--white);
+}
+
 /* Footer */
 
 .footer {
     max-width: 1440px;
     background-color: var(--dark_lue);
     margin: 0 auto;
+}
+
+.footer__wrapper {
+    padding: 0 9rem
+}
+
+.footer__nav-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.footer_items {
+    padding: 1.5rem 0;
+}
+
+.footer-link {
+    color: var(--white);
+}
+
+.logo {
+    display: flex;
+}
+
+.social__links {
+    display: flex;
+    gap: 2rem;
+}
+
+.social__links i {
+    font-size: 1.6rem;
+    color: var(--white);
+    transition: .3s ease;
+}
+
+.social__links i:hover {
+    color: var(--soft_red);
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 

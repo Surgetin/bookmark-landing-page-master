@@ -8,6 +8,8 @@
   
   <title>Frontend Mentor | Bookmark landing page</title>
 
+  <script src="https://kit.fontawesome.com/64173b1f39.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
 </head>
@@ -264,7 +266,7 @@
       </div>
     </div>
   </main>
-  
+  <!-- Contact section -->
   <section class="contact__section">
     <div class="contact__content">
       <div class="contact__title">
@@ -274,16 +276,29 @@
         Stay up-to-date with what we’re doing
       </div> 
       <form class="contact__form">
-        <input class="email" type="email" name="email">
-        <button class="nav__btn btn" aria-label="button">Contact Us</button>
+        <input class="email" type="email" name="email" placeholder="Enter your email adress">
+        <button class="nav__btn btn email-btn" aria-label="button">Contact Us</button>
       </form>
     </div>
   </section>
-
-  <footer class="footer">    
-    Features
-    Pricing
-    Contact
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <nav class="nav">
+        <div class="footer__nav-container">
+          <a href="#"><img class="logo" src="./images/logo-bookmark-white.svg" alt="logo"></a>
+          <ul class="nav__list-items footer_items">
+            <li class="nav__list_item"><a href="#" class="nav__list-link footer-link">Features</a></li>
+            <li class="nav__list_item"><a href="#" class="nav__list-link footer-link">Pricing</a></li>
+            <li class="nav__list_item"><a href="#" class="nav__list-link footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="social__links">
+          <i class="fa-brands fa-facebook-square"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </nav>
+    </div>
   </footer>
 
 </body>
