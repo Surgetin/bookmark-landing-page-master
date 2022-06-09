@@ -23,16 +23,18 @@ const logo = document.querySelectorAll(".logo");
 toggleMenu.addEventListener("click", () => {
     toggleMenu.classList.toggle("active");
     navItem.classList.toggle("active");
-    document.body.classList.toggle("stop-scrolling")
-    logo[0].classList.toggle('logo-hidden')
-    logo[1].classList.toggle('logo-shown')
+    document.body.classList.toggle("stop-scrolling");
+    logo[0].classList.toggle('logo-hidden');
+    logo[1].classList.toggle('logo-shown');
 });
 
 document.querySelectorAll(".nav__list-link").forEach(e => 
     e.addEventListener("click", () => {
+      document.body.classList.remove("stop-scrolling");
       toggleMenu.classList.remove("active");
       navItem.classList.remove("active");
-      document.body.classList.remove("stop-scrolling")
+      logo[0].classList.remove('logo-hidden');
+      logo[1].classList.remove('logo-shown');
 }));
 
 
