@@ -804,7 +804,8 @@ body {
     }
 
     .menu.active {
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .menu.active .menu__btn:nth-child(2) {
