@@ -31,6 +31,7 @@ document.querySelectorAll(".nav__list-link").forEach(e =>
         navItem.classList.remove("active");
 }));
 
+
 /* window.addEventListener("scroll", () => {
     navbar.classList.toggle("nav-srolled", window.scrollY > 0);
 }) */

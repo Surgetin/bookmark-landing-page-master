@@ -96,12 +96,16 @@ body {
 .nav__list-link {
     font-size: 0.75rem;
     color: var(--dark_lue);
-    transition: .4s ease;
+    transition: .3s ease;
     letter-spacing: 2px;
 }
 
 .nav__list-link:hover {
     color: var(--soft_red);
+}
+
+.nav__social-links {
+    display: none;
 }
 
 .menu {
@@ -795,6 +799,7 @@ body {
     .menu {
         display: block;
         transition: 0.3s ease;
+        z-index: 9999;
     }
 
     .menu.active .menu__btn:nth-child(2) {
@@ -803,39 +808,68 @@ body {
 
     .menu.active .menu__btn:nth-child(1) {
         transform: translateY(6px) rotate(45deg);
+        background-color: var(--white);
     }
 
     .menu.active .menu__btn:nth-child(3) {
         transform: translateY(-6px) rotate(-45deg);
+        background-color: var(--white);
     }
 
     .nav__list-items {
         position: fixed;
         flex-direction: column;
+        padding: 5rem 1.5rem 0;
         width: 100%;
         height: 100%;
-        right: -200%;
-        top: 6rem;
+        right: 0;
+        top: 0;
         text-align: center;
-        background-color: rgba(37, 43, 70, .9);
+        background-color: rgba(37, 43, 70, .95);
         gap: 1rem;
-        padding: 2rem 0;
         z-index: 99;
         border-radius: var(--br);
         color: var(--white);
+        opacity: 0;
     }
 
     .nav__list-items.active{
         position: fixed;
+        padding: 5rem 1.5rem 0;
         width: 100%;
         height: 100%;
-        top: 6rem;
         right: 0;
+        top: 0;
+        background-color: rgba(37, 43, 70, .95);
         gap: 1rem;
-        background-color: rgba(37, 43, 70, .9);
         z-index: 99;
         border-radius: var(--br);
         color: var(--white);
+        opacity: 1;
+    }
+
+    .nav__list-items.active .nav__btn {
+        background-color: transparent;
+        border-color: var(--white);
+        width: 100%;
+    }
+
+    .nav__list-items.active .nav__list_item {
+        margin-bottom: .5rem;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+
+    .nav__list-items.active .nav__list-link:hover {
+        color: var(--soft_red);
+    }
+
+    .nav__list-items.active .nav__list-link {
+        color: var(--white);
+    }
+
+    .nav__list-items.active .nav__social-links {
+        display: block;
     }
 }
 
