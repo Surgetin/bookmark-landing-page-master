@@ -799,10 +799,9 @@ body {
 
     .menu {
         display: block;
-        position: fixed;
-        right: 2rem;
         transition: 0.3s ease;
         z-index: 9999;
+        overflow: hidden;
     }
 
     .menu.active .menu__btn:nth-child(2) {
