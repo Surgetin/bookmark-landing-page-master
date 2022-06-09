@@ -29,6 +29,7 @@ document.querySelectorAll(".nav__list-link").forEach(e =>
     e.addEventListener("click", () => {
         toggleMenu.classList.remove("active");
         navItem.classList.remove("active");
+        document.body.classList.remove("stop-scrolling")
 }));
 
 
