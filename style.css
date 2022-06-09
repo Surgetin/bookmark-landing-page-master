@@ -803,9 +803,8 @@ body {
         z-index: 9999;
     }
 
-    .menu.active {
-        overflow-x: hidden;
-        overflow-y: hidden;
+    .menu.active .main{
+        overflow: hidden;
     }
 
     .menu.active .menu__btn:nth-child(2) {
