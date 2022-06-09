@@ -783,7 +783,7 @@ body {
 }
 
 @media screen and (max-width: 640px) {
-    .nav__list-items {
+    .nav .nav__list-items {
         display: none;
     }
 
