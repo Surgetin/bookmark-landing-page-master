@@ -14,11 +14,3 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
-
-{
-  "rules": {
-    "selector-pseudo-class-no-unknown": [ true, {
-      ignorePseudoClasses: ["host"],
-    } ]
-    }
-}

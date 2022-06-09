@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
+
 :root {
     --white: hsl(0, 0%, 100%);
     --soft_red: hsl(0, 94%, 66%);
@@ -98,6 +99,21 @@ body {
 
 .nav__list-link:hover {
     color: var(--soft_red);
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+}
+
+.menu__btn {
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    width: 35px;
+    height: 3px;
+    background-color: var(--dark_lue);
+    border-radius: 5px;
 }
 
 .btn {
@@ -653,7 +669,7 @@ body {
     }
 
     .hero__content::after {
-        top: 19rem;
+        top: 16rem;
         height: 11rem;
         width: 60%;
         border-bottom-left-radius: 50px;
@@ -715,6 +731,15 @@ body {
     .tabs__list-items {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+    } 
+
+    .tab__list-item {
+
+    }
+
+    .tab.active::after {
+        bottom: -15px;
     } 
 
     .active[data-tab-content] {
@@ -759,7 +784,28 @@ body {
     .footer_items   {
         flex-direction: column;
     }
+}
 
+@media screen and (max-width: 640px) {
+    .nav__wrapper {
+        padding: 2rem 2rem 3rem;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu.active .menu__btn:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu.active .menu__btn:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu.active .menu__btn:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
 
 
