@@ -724,8 +724,9 @@ body {
     }
 
     .tabs_container::after {
-        top: 81rem;
+        top: 80rem;
         width: 90%;
+        height: 13rem;
     }
 
     .tab__content {
