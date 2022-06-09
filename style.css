@@ -520,6 +520,7 @@ body {
     letter-spacing: 5px;
     text-transform: uppercase;
     margin: 3rem auto 2rem;
+    font-weight: 400;
 }
 
 .contact__heading {
@@ -652,7 +653,7 @@ body {
     }
 
     .hero__content::after {
-        top: 15rem;
+        top: 19rem;
         height: 11rem;
         width: 60%;
         border-bottom-left-radius: 50px;
@@ -673,6 +674,92 @@ body {
     .btn {
         padding: 0.8rem 1rem;
     }
+
+    .download__section{
+        margin-bottom: 6rem;
+    }
+
+    .feature__title, 
+    .download__title, 
+    .faq__title,
+    .tab__title {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .extensions__container {
+        gap: 1.5rem;
+    }
+
+    .faq__title,
+    .accordion_container, 
+    .contact__heading, 
+    .tab__content, 
+    .bookmark_image {
+        width: 100%;
+    }
+
+    .bookmark_image {
+        max-width: 500px;
+    }
+
+    .tabs_container::after {
+        top: 81rem;
+        width: 90%;
+    }
+
+    .tab__content {
+        text-align: center;
+    }
+
+    .tabs__list-items {
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .active[data-tab-content] {
+        flex-direction: column;
+    }
+
+    .contact__section {
+        padding: 0 2rem;
+    }
+
+    .contact__title {
+        margin: 3rem auto 1.2rem;
+    }
+
+    .contact__form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .email {
+        padding: 1rem;
+    }
+
+    .footer__wrapper {
+        padding: 2.5rem 1rem;
+    }
+
+    .footer__wrapper nav {
+        margin-bottom: 0;
+    }
+
+    .footer__nav-container {
+        gap: 0;
+    }
+
+    .footer_items {
+        gap: 2rem;
+    }
+
+    .footer__wrapper nav,
+    .footer__nav-container,
+    .footer_items   {
+        flex-direction: column;
+    }
+
 }
 
 

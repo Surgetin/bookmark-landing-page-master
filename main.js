@@ -15,3 +15,10 @@ tabs.forEach(tab => {
   })
 })
 
+{
+  "rules": {
+    "selector-pseudo-class-no-unknown": [ true, {
+      ignorePseudoClasses: ["host"],
+    } ]
+    }
+}
