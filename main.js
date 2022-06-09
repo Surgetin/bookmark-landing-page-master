@@ -18,7 +18,6 @@ tabs.forEach(tab => {
 
 const toggleMenu = document.querySelector(".menu");
 const navItem = document.querySelector(".nav__list-items");
-const navbar = document.querySelector(".header");
 
 toggleMenu.addEventListener("click", () => {
     toggleMenu.classList.toggle("active");
