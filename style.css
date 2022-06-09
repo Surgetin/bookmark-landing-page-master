@@ -803,10 +803,6 @@ body {
         z-index: 9999;
     }
 
-    .menu.active .main{
-        overflow: hidden;
-    }
-
     .menu.active .menu__btn:nth-child(2) {
         opacity: 0;
     }
@@ -865,6 +861,10 @@ body {
         border-radius: var(--br);
         color: var(--white);
         opacity: 1;
+    }
+
+    .nav__list-items.active .main{
+        overflow: hidden;
     }
 
     .nav__list-items.active .nav__btn {
