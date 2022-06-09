@@ -864,29 +864,35 @@ body {
         width: 300px;
     }
 
-    .nav__list-items.active .nav__btn:hover {
+    .nav__list-items .nav__btn {
+        background-color: transparent;
+        border-color: var(--white);
+        width: 300px;
+    }
+
+    .nav__list-items .nav__btn:hover {
         color: var(--white);
     }
 
-    .nav__list-items.active .nav__list_item {
+    .nav__list-items .nav__list_item {
         margin-bottom: 2rem;
         font-weight: 500;
         letter-spacing: 5px;
     }
 
-    .nav__list-items.active .nav__list_item:first-child{
+    .nav__list-items .nav__list_item:first-child{
         margin-top: 1.5rem;
     }
 
-    .nav__list-items.active .nav__list-link:hover {
+    .nav__list-items .nav__list-link:hover {
         color: var(--soft_red);
     }
 
-    .nav__list-items.active .nav__list-link {
+    .nav__list-items .nav__list-link {
         color: var(--white);
     }
 
-    .nav__list-items.active .nav__list_item.nav__social-links {
+    .nav__list-items .nav__list_item.nav__social-links {
         display: flex;
         margin-top: 10rem;
         gap: 2rem;
