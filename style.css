@@ -434,7 +434,7 @@ body {
     position: absolute;
     background-color: var(--soft_red);
     width: 3px;
-    height: 13px;
+    height: 14px;
 }
 
 .arrow:before {
