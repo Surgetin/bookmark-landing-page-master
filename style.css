@@ -669,7 +669,7 @@ body {
     }
 
     .hero__content::after {
-        top: 16rem;
+        top: 13rem;
         height: 11rem;
         width: 60%;
         border-bottom-left-radius: 50px;
