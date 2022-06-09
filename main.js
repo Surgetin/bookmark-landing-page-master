@@ -18,11 +18,14 @@ tabs.forEach(tab => {
 
 const toggleMenu = document.querySelector(".menu");
 const navItem = document.querySelector(".nav__list-items");
+const logo = document.querySelectorAll(".logo");
 
 toggleMenu.addEventListener("click", () => {
     toggleMenu.classList.toggle("active");
     navItem.classList.toggle("active");
     document.body.classList.toggle("stop-scrolling")
+    logo[0].classList.toggle('logo-hidden')
+    logo[1].classList.toggle('logo-shown')
 });
 
 document.querySelectorAll(".nav__list-link").forEach(e => 

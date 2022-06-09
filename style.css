@@ -34,6 +34,10 @@ img {
     width: 100%;
 }
 
+.logo.mobile {
+    display: none;
+}
+
 body {
     font-size: 1.125rem;
     font-family: 'Rubik', sans-serif;
@@ -822,20 +826,6 @@ body {
         background-color: var(--white);
     }
 
-    .menu.active .logo__container {
-        display: none;
-    }
-
-    .menu.active .logo {
-        display: none;
-    }
-
-    .menu.active .logo-mobile {
-        position: relative;
-        display: flex;
-        z-index: 9999;
-    }
-
     .nav__list-items {
         position: fixed;
         flex-direction: column;
@@ -900,8 +890,36 @@ body {
         cursor: pointer;
     }
 
-    .menu.active .main{
-        overflow: hidden;
+    .logo.logo-hidden {
+        display: none;
+    }
+
+    .logo.mobile {
+        position: fixed;
+        flex-direction: column;
+        opacity: 0;
+    }
+    
+    .logo.mobile.logo-shown {
+        position: relative;
+        display: flex;
+        z-index: 9999;
+        opacity: 1;
+        animation:3s ease 0s normal forwards 1 fadein;
+        -webkit-animation: .4s ease 0s normal forwards 1 fadein;
+        opacity:1
+    }
+        
+    @keyframes fadein{
+        0%{opacity:0}
+        80%{opacity:0}
+        100%{opacity:1}
+    }
+    
+    @-webkit-keyframes fadein{
+        0%{opacity:0}
+        80%{opacity:0}
+        100%{opacity:1}
     }
 }
 
