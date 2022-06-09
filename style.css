@@ -423,10 +423,12 @@ body {
 
 .arrow:before {
     transform: translate(-4px, 0) rotate(45deg);
+    -webkit-transform: translate(-4px, 0) rotate(45deg);
 }
 
 .arrow:after {
     transform: translate(4px, 0) rotate(-45deg);
+    -webkit-transform: translate(4px, 0) rotate(-45deg);
 }
 
 .checkbox[type=checkbox] {
@@ -444,15 +446,18 @@ body {
     max-height: 0;
     opacity: 0;
     transform: translate(0, 50%);
+    -webkit-transform: translate(0, 50%);
 }
 
 .checkbox[type=checkbox]:checked ~ i:before {
     transform: translate(4px, 0) rotate(45deg);
+    -webkit-transform: translate(4px, 0) rotate(45deg);
     background-color: var(--soft_blue);
 }
 
 .checkbox[type=checkbox]:checked ~ i:after {
     transform: translate(-4px, 0) rotate(-45deg);
+    -webkit-transform: translate(-4px, 0) rotate(-45deg);
     background-color: var(--soft_blue);
 }
 
