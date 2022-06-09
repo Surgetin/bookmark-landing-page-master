@@ -734,10 +734,6 @@ body {
         width: 100%;
     } 
 
-    .tab__list-item {
-
-    }
-
     .tab.active::after {
         bottom: -15px;
     } 
@@ -787,8 +783,12 @@ body {
 }
 
 @media screen and (max-width: 640px) {
+    .nav__list-items {
+        display: none;
+    }
+
     .nav__wrapper {
-        padding: 2rem 2rem 3rem;
+        padding: 2rem 1rem 3rem;
     }
 
     .menu {
