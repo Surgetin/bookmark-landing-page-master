@@ -22,6 +22,7 @@ const navItem = document.querySelector(".nav__list-items");
 toggleMenu.addEventListener("click", () => {
     toggleMenu.classList.toggle("active");
     navItem.classList.toggle("active");
+    document.body.classList.toggle("stop-scrolling")
 });
 
 document.querySelectorAll(".nav__list-link").forEach(e => 

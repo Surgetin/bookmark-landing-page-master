@@ -793,6 +793,11 @@ body {
 }
 
 @media screen and (max-width: 640px) {
+    .stop-scrolling {
+        height: 100vh;
+        overflow-y: hidden;
+    }
+
     .nav__wrapper {
         padding: 2rem 1rem 3rem;
     }
@@ -861,7 +866,6 @@ body {
         border-radius: var(--br);
         color: var(--white);
         opacity: 1;
-        overflow: hidden;
     }
 
     .nav__list-items.active .nav__btn {
@@ -896,7 +900,7 @@ body {
         cursor: pointer;
     }
 
-    .menu.active body{
+    .menu.active .main{
         overflow: hidden;
     }
 }
