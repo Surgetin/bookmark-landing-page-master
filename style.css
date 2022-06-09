@@ -861,6 +861,7 @@ body {
         border-radius: var(--br);
         color: var(--white);
         opacity: 1;
+        overflow: hidden;
     }
 
     .nav__list-items.active .nav__btn {
